@@ -1,0 +1,66 @@
+.hero-section {
+  align-items: flex-start;
+  background-image: linear-gradient(15deg, #ffffff 0%, #ffffff 0%);
+  display: flex;
+  height: 400px;
+  justify-content: center;
+  padding: var(--spacing-xxl) var(--spacing-l);
+}
+.card-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  grid-column-gap: var(--spacing-l);
+  grid-row-gap: var(--spacing-l);
+  max-width: var(--width-container);
+  width: 100%;
+}
+@media (min-width: 540px) {
+  .card-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (min-width: 960px) {
+  .card-grid {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+.card {
+  list-style: none;
+  position: relative;
+  border: none;
+}
+
+.card:before {
+  content: "";
+  display: block;
+  width: 100%;
+}
+.card_image {
+  background-size: cover;
+  background-position: center;
+  border-radius: var(--spacing-l);
+  filter: brightness(0.75) saturate(1.2) contrast(0.85);
+  position: absolute;
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 200ms linear;
+}
+.card:hover .card_image {
+  transform: scale(1.05) translateZ(0);
+}
+.card-grid:hover > .card:not(:hover) .card_image {
+  filter: brightness(0.5) saturate(0) contrast(1.2) blur(2px);
+}
+
+.card-title {
+  position: absolute;
+  top: 150px;
+  left: 40px;
+}
+.card-title h5 {
+  font-weight: bold;
+  color: var(--text-lighter);
+  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+}

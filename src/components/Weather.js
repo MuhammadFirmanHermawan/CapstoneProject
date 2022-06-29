@@ -1,48 +1,80 @@
-import React, { useState } from "react";
-import axios from "axios";
+import { useState, useEffect } from "react";
+import { Button, InputGroup, Form } from "react-bootstrap";
 
-const Weather = () => {
-  const [data, setData] = useState({});
-  const [location, setLocation] = useState("");
-  const url = "https://api.openweathermap.org/data/2.5/weather?lat=-6.943097&lon=107.633545&units=imperial&appid=3302b3a4dee7c45ff1a76b7a2ab3d7ba";
+const Cuaca = () => {
+  const [apiData, setApiData] = useState({});
+  const [getState, setGetState] = useState(" ");
+  const [state, setState] = useState("Bandung");
 
-  const searchLocation = (event) => {
-    if (event.key === "Enter") {
-      axios.get(url).then((response) => {
-        setData(response.data);
-        console.log(response.data);
-      });
-      setLocation("");
-    }
+  const apiKey = process.env.REACT_APP_API_KEY;
+  const apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${state}&appid=${apiKey}`;
+
+  useEffect(() => {
+    fetch(apiUrl)
+      .then((res) => res.json())
+      .then((data) => setApiData(data));
+  }, [apiUrl]);
+
+  const inputHandler = (event) => {
+    setGetState(event.target.value);
+  };
+
+  const submitHandler = () => {
+    setState(getState);
+  };
+
+  const kelvinToFarenheit = (k) => {
+    return (k - 273.15).toFixed(2);
   };
   return (
-    <div className="container">
-      <div className="search">
-        <input value={location} onChange={(event) => setLocation(event.target.calue)} onKeyPress={searchLocation} placeholder="Enter Locaation" type="text"></input>
-      </div>
-      <div className="top">
-        <div className="location">
-          <p>{data.name}</p>
-        </div>
-        <div className="tep">
-          <h1>{data.main ? <h1>{data.main.temp.toFixed()}°F</h1> : null}</h1>
-        </div>
-        <div className="description">{data.weather ? <p>{data.weather[0].main}</p> : null}</div>
-      </div>
-      {data.name !== undefined && (
-        <div className="bottom">
-          <div className="fells">
-            {data.main ? <p>{data.main.feels_like}°F</p> : null}
-            <p>Feels Like</p>
+    <div className="Weather">
+      <div className="container">
+        <div className="mt-3 d-flex flex-column justify-content-center align-items-center">
+          <div class="col-auto">
+            <InputGroup className="mb-3" onChange={inputHandler} value={getState}>
+              <Form.Control type="text" placeholder="Masukan Lokasi" />
+            </InputGroup>
           </div>
-          <div className="humidity">{data.main ? <p>{data.main.humidity}%</p> : null}</div>
-          <div className="wind">
-            {data.wind ? <p>{data.wind.speed}MPH</p> : null}
-            <p>Wind Speed</p>
-          </div>
+          <Button variant="primary" className="btn mt-2" onClick={submitHandler}>
+            Search
+          </Button>
         </div>
-      )}
+
+        <div className="card mt-3 mx-auto" style={{ width: "60vw" }}>
+          {apiData.main ? (
+            <div class="card-body text-center">
+              <img src={`http://openweathermap.org/img/w/${apiData.weather[0].icon}.png`} alt="weather status icon" className="weather-icon" />
+
+              <p className="h2">{kelvinToFarenheit(apiData.main.temp)}&deg; C</p>
+
+              <p className="h5">
+                <i className="fas fa-map-marker-alt"></i> <strong>{apiData.name}</strong>
+              </p>
+
+              <div className="row mt-4">
+                <div className="col-md-6">
+                  <p>
+                    <i class="fas fa-temperature-low "></i> <strong>{kelvinToFarenheit(apiData.main.temp_min)}&deg; C</strong>
+                  </p>
+                  <p>
+                    <i className="fas fa-temperature-high"></i> <strong>{kelvinToFarenheit(apiData.main.temp_max)}&deg; C</strong>
+                  </p>
+                </div>
+                <div className="col-md-6">
+                  <p>
+                    {" "}
+                    <strong>{apiData.weather[0].main}</strong>
+                  </p>
+                </div>
+              </div>
+            </div>
+          ) : (
+            <p>Loading</p>
+          )}
+        </div>
+      </div>
     </div>
   );
 };
-export default Weather;
+
+export default Cuaca;

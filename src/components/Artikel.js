@@ -1,4 +1,5 @@
 import { Card, Row, Col } from "react-bootstrap";
+import "./Artikel.css";
 import card from "../assets/card.png";
 import card2 from "../assets/card2.png";
 import card3 from "../assets/card3.png";
