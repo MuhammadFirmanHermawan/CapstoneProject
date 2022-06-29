@@ -1,0 +1,34 @@
+.information {
+  background-image: url("../assets/bg.png");
+  background-size: cover;
+  width: 100%;
+  height: auto;
+  color: white;
+  text-shadow: 2px 2px 4px #000000;
+}
+.PHAir {
+  padding: 50px 50px 0px 50px;
+  margin: 0;
+}
+.KetinggianAir {
+  padding: 0px 100px 50px 50px;
+  margin: 0;
+}
+.text1 {
+  margin: 100px 0px;
+  padding: 0px 150px;
+}
+.text1 h2 {
+  font-weight: bolder;
+}
+.informationPicture {
+  text-align: center;
+}
+.PHImage {
+  width: 400px;
+  height: 300px;
+}
+.KetinggianImage {
+  width: 300px;
+  height: 360px;
+}

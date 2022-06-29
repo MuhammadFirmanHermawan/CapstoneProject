@@ -1,9 +1,8 @@
-import "./components/Style.css";
 import NavigationBar from "./components/NavigationBar";
 import Artikel from "./components/Artikel";
 import Informasi from "./components/Informasi";
 import Footer from "./components/Footer";
-import Weather from "./components/Weather";
+import Cuaca from "./components/Weather";
 
 function App() {
   return (
@@ -19,7 +18,7 @@ function App() {
         <Footer />
       </div>
       <div>
-        <Weather />
+        <Cuaca />
       </div>
     </div>
   );

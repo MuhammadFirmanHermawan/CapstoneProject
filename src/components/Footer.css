@@ -1,0 +1,52 @@
+.footer {
+  width: 100%;
+  padding: 0px;
+}
+.group1 {
+  padding-top: 100px;
+}
+.group2 {
+  padding-left: 50px;
+  padding-top: 30px;
+}
+.progressbutton {
+  width: 160px;
+  height: 50px;
+  font-weight: bolder;
+  box-shadow: 8px 10px 5px #aaaaaa;
+}
+.copyright {
+  margin-top: 30px;
+  width: 100px;
+}
+
+.NamesOfGroup {
+  margin: 20px 0px;
+}
+h6 {
+  font-weight: bold;
+}
+.logo {
+  margin-left: 4px;
+}
+.yabbImage {
+  height: 30px;
+  padding-left: 150px;
+  margin-top: -50px;
+}
+.gigihImage {
+  height: 50px;
+  padding-left: 220px;
+  margin-top: -50px;
+}
+.mail {
+  height: 24px;
+}
+.linkedin {
+  height: 24px;
+  padding-left: 5px;
+}
+.garis-bawah {
+  border-bottom: solid;
+  padding-right: 100px;
+}

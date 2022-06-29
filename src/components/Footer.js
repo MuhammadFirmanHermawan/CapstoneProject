@@ -1,4 +1,5 @@
 import { Image, Button, Row, Col } from "react-bootstrap";
+import "./Footer.css";
 import copyright from "../assets/copyright.png";
 import mail from "../assets/mail.png";
 import linkedin from "../assets/linkedin.png";

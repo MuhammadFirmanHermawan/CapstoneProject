@@ -1,4 +1,5 @@
 import { Image } from "react-bootstrap";
+import "./Informasi.css";
 import ph from "../assets/ph.png";
 import graphic from "../assets/graphic.png";
 
