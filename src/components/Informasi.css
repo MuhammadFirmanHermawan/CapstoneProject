@@ -1,5 +1,5 @@
 .information {
-  background-image: url("../assets/bg.png");
+  background-image: url("../assets/bginfo.png");
   background-size: cover;
   width: 100%;
   height: auto;
@@ -7,28 +7,45 @@
   text-shadow: 2px 2px 4px #000000;
 }
 .PHAir {
-  padding: 50px 50px 0px 50px;
+  padding: 0px 20px 50px 80px;
   margin: 0;
+  text-align: justify;
 }
 .KetinggianAir {
-  padding: 0px 100px 50px 50px;
-  margin: 0;
+  padding-bottom: 40px;
+  text-align: center;
 }
 .text1 {
-  margin: 100px 0px;
-  padding: 0px 150px;
+  padding: 120px 150px;
+  text-align: justify;
 }
 .text1 h2 {
   font-weight: bolder;
 }
-.informationPicture {
+.text1 p{
+  text-align: justify;
+  padding-right: 100px;
+}
+.informationPicture1 {
   text-align: center;
+}
+.informationPicture1 p {
+  position: relative;
+  top: 174px;
+  right: 50px;
+  font-size: 30px;
+}
+.informationPicture2 p {
+  position: relative;
+  top: 40px;
+  right: -120px;
+  font-size: 30px;
 }
 .PHImage {
   width: 400px;
-  height: 300px;
+  height: 280px;
 }
 .KetinggianImage {
-  width: 300px;
-  height: 360px;
+  width: 100px;
+  height: 300px;
 }
