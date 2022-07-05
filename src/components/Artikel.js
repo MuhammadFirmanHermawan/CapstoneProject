@@ -1,4 +1,5 @@
 import { Card, Row, Col } from "react-bootstrap";
+import "./Artikel.css";
 import card from "../assets/card.png";
 import card2 from "../assets/card2.png";
 import card3 from "../assets/card3.png";
@@ -12,8 +13,9 @@ const Artikel = () => {
           <Card.Link className="card text-white">
             <Card.Img className="card_image" src={card} alt="Card image" />
             <Card.ImgOverlay className="card-title">
-              <Card.Title className=" text-center">
+              <Card.Title className="text-justify">
                 <h5>Pencemaran Berat</h5>
+                <p>Pencemaran Terjadi </p>
               </Card.Title>
             </Card.ImgOverlay>
           </Card.Link>
