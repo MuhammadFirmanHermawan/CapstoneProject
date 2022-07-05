@@ -60,7 +60,8 @@
   left: 40px;
 }
 .card-title h5 {
-  font-weight: bold;
+  font-weight: normal;
   color: var(--text-lighter);
   text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
+  padding: 20px;
 }

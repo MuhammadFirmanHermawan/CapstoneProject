@@ -1,5 +1,6 @@
 import { useState, useEffect } from "react";
 import { Button, InputGroup, Form } from "react-bootstrap";
+import "./Weather.css";
 
 const Cuaca = () => {
   const [apiData, setApiData] = useState({});
@@ -27,43 +28,47 @@ const Cuaca = () => {
     return (k - 273.15).toFixed(2);
   };
   return (
-    <div className="Weather">
-      <div className="container">
+    <div className="Weather" style={{ width: "500px" }}>
         <div className="mt-3 d-flex flex-column justify-content-center align-items-center">
           <div class="col-auto">
-            <InputGroup className="mb-3" onChange={inputHandler} value={getState}>
+            <InputGroup className="inputLokasi mb-3" onChange={inputHandler} value={getState}>
               <Form.Control type="text" placeholder="Masukan Lokasi" />
             </InputGroup>
           </div>
-          <Button variant="primary" className="btn mt-2" onClick={submitHandler}>
+          <Button className="btn mt-2" onClick={submitHandler}>
             Search
           </Button>
         </div>
 
-        <div className="card mt-3 mx-auto" style={{ width: "60vw" }}>
+        <div className="card mt-3 mx-auto" style={{ width: "500px" }}>
           {apiData.main ? (
             <div class="card-body text-center">
-              <img src={`http://openweathermap.org/img/w/${apiData.weather[0].icon}.png`} alt="weather status icon" className="weather-icon" />
-
-              <p className="h2">{kelvinToFarenheit(apiData.main.temp)}&deg; C</p>
-
-              <p className="h5">
-                <i className="fas fa-map-marker-alt"></i> <strong>{apiData.name}</strong>
+              <h4 ClassName="h3">
+                <i className="fas fa-map-marker-alt mx-2"></i> 
+                <strong>{apiData.name}</strong>
+              </h4>
+              <img src={`http://openweathermap.org/img/w/${apiData.weather[0].icon}.png`} alt="weather status icon" className="weather-icon" />               
+              <p className="nameWeather">
+                {" "}
+                <strong>{apiData.weather[0].main}</strong>
               </p>
+              <h2 className="suhu">
+                {kelvinToFarenheit(apiData.main.temp)}&deg; C
+              </h2>
+
+              
 
               <div className="row mt-4">
                 <div className="col-md-6">
+                  <p ClassName="textTemp">Min Temperature</p>
                   <p>
-                    <i class="fas fa-temperature-low "></i> <strong>{kelvinToFarenheit(apiData.main.temp_min)}&deg; C</strong>
-                  </p>
-                  <p>
-                    <i className="fas fa-temperature-high"></i> <strong>{kelvinToFarenheit(apiData.main.temp_max)}&deg; C</strong>
+                    <i className="fas fa-temperature-low "></i> <strong>{kelvinToFarenheit(apiData.main.temp_min)}&deg; C</strong>
                   </p>
                 </div>
                 <div className="col-md-6">
+                  <p ClassName="textTemp">Max Temperature</p>
                   <p>
-                    {" "}
-                    <strong>{apiData.weather[0].main}</strong>
+                    <i className="fas fa-temperature-high"></i> <strong>{kelvinToFarenheit(apiData.main.temp_max)}&deg; C</strong>
                   </p>
                 </div>
               </div>
@@ -72,7 +77,6 @@ const Cuaca = () => {
             <p>Loading</p>
           )}
         </div>
-      </div>
     </div>
   );
 };
