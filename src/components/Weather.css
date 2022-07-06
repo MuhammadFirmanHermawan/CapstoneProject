@@ -1,28 +1,27 @@
 body {
-    font-family: "Tajawal", sans-serif;
-    width: 100%;
+  font-family: "Tajawal", sans-serif;
+  width: 100%;
 }
-.inputLokasi{
-    width: 400px !important;
-    border-radius: 20px !important;
+.inputLokasi {
+  width: 400px !important;
+  border-radius: 20px !important;
 }
-.weather{
-    color: whitesmoke !important;
+.weather {
+  color: whitesmoke !important;
 }
-.btn{
-    background-color: #7da2ff66 !important;
-    border: none !important;
+.btn {
+  background-color: #7da2ff66 !important;
+  border: none !important;
 }
-.card{
-    background-color: rgba(130, 132, 143, 0.352) !important;
-    border-color: #ffff !important;
-    color: whitesmoke ;
+.card {
+  background-color: rgba(130, 132, 143, 0.352) !important;
+  border-color: #ffff !important;
+  color: whitesmoke;
 }
-.nameWeather{
-    margin: 0px;
+.nameWeather {
+  margin: 0px;
 }
 /* .suhu{
     border-top-style: dashed;
     border-width: thin medium;
 } */
-  
