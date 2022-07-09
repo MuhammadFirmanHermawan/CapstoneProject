@@ -1,7 +1,3 @@
-body {
-  font-family: "Tajawal", sans-serif;
-  width: 100%;
-}
 .inputLokasi {
   width: 400px !important;
   border-radius: 20px !important;
@@ -13,7 +9,7 @@ body {
   background-color: #7da2ff66 !important;
   border: none !important;
 }
-.card {
+.cards {
   background-color: rgba(130, 132, 143, 0.352) !important;
   border-color: #ffff !important;
   color: whitesmoke;
@@ -21,7 +17,3 @@ body {
 .nameWeather {
   margin: 0px;
 }
-/* .suhu{
-    border-top-style: dashed;
-    border-width: thin medium;
-} */

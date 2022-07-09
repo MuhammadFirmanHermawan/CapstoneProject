@@ -1,13 +1,7 @@
-.footer {
-  width: 100%;
-  padding: 0px;
-  margin: 20px 10px;
-}
 .group1 {
-  padding-top: 100px;
+  padding-top: 50px;
 }
 .group2 {
-  padding-left: 0px;
   padding-top: 30px;
 }
 .progressbutton {
@@ -33,12 +27,10 @@ h6 {
 .yabbImage {
   height: 30px;
   padding-left: 150px;
-  margin-top: -50px;
 }
 .gigihImage {
   height: 50px;
-  padding-left: 220px;
-  margin-top: -50px;
+  padding-left: 200px;
 }
 .mail {
   height: 24px;
@@ -47,7 +39,8 @@ h6 {
   height: 24px;
   padding-left: 5px;
 }
-.garis-bawah {
-  border-bottom: solid;
-  padding-right: 100px;
+.garisBawah {
+  border-top: 3px solid #000;
+  margin-right: -50px;
+  margin-left: 20px;
 }

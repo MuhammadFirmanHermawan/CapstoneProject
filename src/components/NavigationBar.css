@@ -1,13 +1,9 @@
-body {
-  font-family: "Tajawal", sans-serif;
-  width: 100%;
-}
 .navbar {
-  padding-left: 30px;
-  padding-right: 30px;
-  width: 1300px;
+  width: 100%;
   background-color: rgba(0, 0, 0, 0.5);
   z-index: 99;
+
+  font-weight: bold;
 }
 
 .nav {
@@ -19,14 +15,9 @@ body {
   transform: scaleX(0);
   transform-origin: bottom right;
   content: " ";
-  display: block;
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   inset: 0 0 0 0;
-  background:#7da2ff53;
+  background: #7da2ff53;
   z-index: -1;
   transition: transform 0.3s ease;
 }
@@ -34,9 +25,7 @@ body {
   transform: scaleX(1);
   transform-origin: bottom left;
 }
-#navbarNavAltMarkup{
-  width: 100%;
-}
+
 .logo {
   font-weight: bold;
 }
@@ -50,8 +39,8 @@ body {
   padding: 200px 0;
   color: white;
 }
-.WeatherBox{
+.WeatherBox {
   position: absolute;
-  top: 150px;
-  right: -100px;
+  top: 100px;
+  right: 0px;
 }

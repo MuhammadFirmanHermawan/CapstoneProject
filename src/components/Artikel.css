@@ -1,67 +1,50 @@
-.hero-section {
-  align-items: flex-start;
-  background-image: linear-gradient(15deg, #ffffff 0%, #ffffff 0%);
-  display: flex;
-  height: 400px;
-  justify-content: center;
+.DataInfo {
   padding: var(--spacing-xxl) var(--spacing-l);
 }
-.card-grid {
-  display: grid;
-  grid-template-columns: repeat(1, 1fr);
-  grid-column-gap: var(--spacing-l);
-  grid-row-gap: var(--spacing-l);
-  max-width: var(--width-container);
-  width: 100%;
-}
-@media (min-width: 540px) {
-  .card-grid {
-    grid-template-columns: repeat(2, 1fr);
-  }
-}
-
-@media (min-width: 960px) {
-  .card-grid {
-    grid-template-columns: repeat(4, 1fr);
-  }
+.DataInfo h2 {
+  margin-bottom: 40px;
+  margin-top: 40px;
+  font-weight: bolder;
 }
 
 .card {
-  list-style: none;
-  position: relative;
-  border: none;
+  margin-bottom: 50px;
 }
 
-.card:before {
-  content: "";
-  display: block;
-  width: 100%;
-}
-.card_image {
-  background-size: cover;
-  background-position: center;
-  border-radius: var(--spacing-l);
-  filter: brightness(0.75) saturate(1.2) contrast(0.85);
-  position: absolute;
+.card__background {
+  margin-left: 60px;
+  margin-top: 10px;
   transform-origin: center;
   transform: scale(1) translateZ(0);
-  transition: filter 200ms linear, transform 200ms linear;
+  transition: filter 200ms linear, transform 500ms linear;
 }
-.card:hover .card_image {
-  transform: scale(1.05) translateZ(0);
-}
-.card-grid:hover > .card:not(:hover) .card_image {
-  filter: brightness(0.5) saturate(0) contrast(1.2) blur(2px);
+.card__body {
+  transform-origin: center;
+  transform: scale(1) translateZ(0);
+  transition: filter 200ms linear, transform 500ms linear;
 }
 
-.card-title {
-  position: absolute;
-  top: 150px;
-  left: 40px;
+.card:hover .card__background {
+  transform: scale(1.05) translateZ(0);
 }
-.card-title h5 {
-  font-weight: normal;
-  color: var(--text-lighter);
-  text-shadow: 2px 2px 20px rgba(0, 0, 0, 0.2);
-  padding: 20px;
+.card:hover .card__body {
+  transform: scale(1.05) translateZ(0);
+}
+.bps {
+  margin-top: 40px;
+  margin-bottom: 45px;
+}
+
+.btn-bps {
+  margin-top: 48px;
+}
+.btn-bmkg {
+  margin-top: 48px;
+}
+.petabencana {
+  margin-top: 40px;
+  margin-bottom: 15px;
+}
+.btn-petabencana {
+  margin-top: 42px;
 }
