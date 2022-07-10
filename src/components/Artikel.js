@@ -17,7 +17,7 @@ const Artikel = () => {
               <Card.Body className="card__body">
                 <Card.Title>Geoportal Data Bencana (BNPB)</Card.Title>
                 <Card.Text>Menyediakan data, informasi, dan teknologi geospasial dalam manajemen bencana: mitigasi, persiapan, respo, dan pemulihan bencana dalam menyokong BNPB dan komunitas manajemen bencana di Indonesia.</Card.Text>
-                <Button variant="primary" className="btn-primary" href="https://gis.bnpb.go.id/">
+                <Button variant="info" className="btn-primary" href="https://gis.bnpb.go.id/">
                   Selengkapnya
                 </Button>
               </Card.Body>

@@ -35,7 +35,7 @@ const Cuaca = () => {
             <Form.Control type="text" placeholder="Masukan Lokasi" />
           </InputGroup>
         </div>
-        <Button className="btn mt-2" onClick={submitHandler}>
+        <Button className="mt-2" varinat="primary" onClick={submitHandler}>
           Search
         </Button>
       </div>

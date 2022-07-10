@@ -29,7 +29,7 @@ const Informasi = () => {
           <p>Melihat tingkat PH Air pada Sungai Citarum sebagai tolak ukur dalam menilai kualitas air.</p>
         </div>
         <div className="informationPicture1 col-6">
-          <p>{todo.phAir}</p>
+          <p>pH : {todo.phAir}</p>
           <Image src={ph} alt="ph" className="PHImage center" />
         </div>
       </div>
