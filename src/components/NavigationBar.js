@@ -1,4 +1,5 @@
 import { Navbar, Container, Nav, Row, Col } from "react-bootstrap";
+import { Link } from "react-scroll";
 import "./NavigationBar.css";
 import Cuaca from "./Weather";
 
@@ -7,22 +8,14 @@ const NavigationBar = () => {
     <div>
       <Navbar className="navbar" collapseOnSelect expand="lg" fixed="top" variant="dark" id="beranda">
         <Container>
-          <Navbar.Brand className="logo" href="#home">
-            CITARUM HARUM
-          </Navbar.Brand>
+          <Navbar.Brand className="logo">CITARUM HARUM</Navbar.Brand>
           <Navbar.Toggle aria-controls="responsive-navbar-nav" />
           <Navbar.Collapse id="responsive-navbar-nav">
             <div className="col" id="navbarNavAltMarkup">
               <Nav className="justify-content-center">
-                <Nav.Link href="#" className="nav text-white ">
-                  Beranda
-                </Nav.Link>
-                <Nav.Link href="#" className="nav text-white">
-                  Artikel
-                </Nav.Link>
-                <Nav.Link href="#" className="nav text-white">
-                  Informasi Air
-                </Nav.Link>
+                <Nav.Link className="nav text-white">Beranda</Nav.Link>
+                <Nav.Link className="nav text-white">Data Informasi</Nav.Link>
+                <Nav.Link className="nav text-white">Informasi Air</Nav.Link>
               </Nav>
             </div>
           </Navbar.Collapse>

@@ -2,21 +2,22 @@ import NavigationBar from "./components/NavigationBar";
 import Artikel from "./components/Artikel";
 import Informasi from "./components/Informasi";
 import Footer from "./components/Footer";
+import "./App.css";
 
 function App() {
   return (
     <div className="container-all">
       <div>
-        <NavigationBar />
+        <NavigationBar id="beranda" />
       </div>
       <div>
-        <Artikel />
+        <Artikel id="dataInformasi" />
       </div>
       <div>
-        <Informasi />
+        <Informasi id="informasi" />
       </div>
       <div>
-        <Footer />
+        <Footer id="footer" />
       </div>
     </div>
   );

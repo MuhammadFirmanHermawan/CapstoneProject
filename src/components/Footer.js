@@ -11,7 +11,7 @@ const Footer = () => {
     <>
       <Row>
         <Col sm={2} className="group1 mx-5">
-          <Button variant="dark" type="button" className="progressbutton ">
+          <Button variant="dark" href="https://drive.google.com/drive/folders/1REseJB41KhN-3NbVCYuPKtrZTP8Ry_V1" className="progressbutton ">
             Our Progress
           </Button>
           <Image src={copyright} alt="copyright" className="copyright center" />
@@ -21,7 +21,6 @@ const Footer = () => {
             <div className="NamesOfGroup row">
               <h6 className="fw-bold">Zafira Galea</h6>
               <p>KMG2FE5023</p>
-
               <p>
                 <a href="#">
                   <Image src={mail} className="mail" />
