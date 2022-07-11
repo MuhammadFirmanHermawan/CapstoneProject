@@ -36,13 +36,13 @@ const Footer = () => {
           <div className="group2 ">
             <div className="NamesOfGroup row">
               <h6 className="fw-bold">M Firman H</h6>
-              <p>KMG2FE5023</p>
+              <p>KMG2FE5047</p>
 
               <p>
                 <a href="#">
                   <Image src={mail} className="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/zafira-galea/">
+                <a href="https://www.linkedin.com/in/muhammad-firman-hermawan-8b537221b/">
                   <Image src={linkedin} className="linkedin" />
                 </a>
               </p>
@@ -53,13 +53,13 @@ const Footer = () => {
           <div className="group2 ">
             <div className="NamesOfGroup row">
               <h6 className="fw-bold">Fadhil Rausyanfikr</h6>
-              <p>KMG2FE5023</p>
+              <p>PG2FE1059</p>
 
               <p>
                 <a href="#">
                   <Image src={mail} className="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/zafira-galea/">
+                <a href="https://www.linkedin.com/in/fadhilrausyanfikr/">
                   <Image src={linkedin} className="linkedin" />
                 </a>
               </p>
@@ -70,12 +70,12 @@ const Footer = () => {
           <div className="group2 ">
             <div className="NamesOfGroup row">
               <h6 className="fw-bold">Ruth Calista P S</h6>
-              <p>KMG2FE5023</p>
+              <p>PG2FE1009</p>
               <p>
                 <a href="#">
                   <Image src={mail} className="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/zafira-galea/">
+                <a href="https://www.linkedin.com/in/ruth-sianipar/">
                   <Image src={linkedin} className="linkedin" />
                 </a>
               </p>
@@ -86,12 +86,12 @@ const Footer = () => {
           <div className="group2 ">
             <div className="NamesOfGroup row">
               <h6 className="fw-bold">Lia Nur Halimah</h6>
-              <p>KMG2FE5023</p>
+              <p>KMG2FE2050</p>
               <p>
                 <a href="#">
                   <Image src={mail} className="mail" />
                 </a>
-                <a href="https://www.linkedin.com/in/zafira-galea/">
+                <a href="https://www.linkedin.com/in/lia-nur-halimah/">
                   <Image src={linkedin} className="linkedin" />
                 </a>
               </p>
